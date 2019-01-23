@@ -3,3 +3,71 @@
 Name:Evelyn Duarte
 Date: 1/22/19 
  */
+
+ /* All inputs that have their specified id has a background when it is focused, same for when information is either valid or invalid. */
+ input#firstBox:focus,
+ input#lastBox:focus,
+ input#streetBox:focus,
+ input#cityBox:focus,
+ input#stateBox:focus,
+ input#zipBox:focus, 
+ input#phonebox:focus {
+    background-color: rgb(245, 245, 140);
+ }
+ input#firstBox:focus:valid,
+ input#lastBox:focus:valid,
+ input#streetBox:focus:valid,
+ input#cityBox:focus:valid,
+ input#stateBox:focus:valid,
+ input#zipBox:focus:valid, 
+ input#phonebox:focus:valid{
+    background: rgb(220, 255, 220) url(mc_go.png) no-repeat right;
+ }
+ input#firstBox:focus:invalid,
+ input#lastBox:focus:invalid,
+ input#streetBox:focus:invalid,
+ input#cityBox:focus:invalid,
+ input#stateBox:focus:invalid,
+ input#zipBox:focus:invalid, 
+ input#phonebox:focus:invalid{
+    background: rgb(255, 232, 232) url(mc_stop.png) no-repeat right;
+ }
+ /* The margin and height is simply for the spacing. */
+
+ label {
+    margin: 5px;
+ }
+ 
+ input, select, textarea {
+
+    margin: 5px 0px;
+
+ }
+ textarea {
+    height: 100px;
+ }
+ /* The width of the form is 40% because i didnt want unnecessary space taken up and the text is aligned in the center just for preference. */
+ form{
+     width: 40%;
+     text-align: center;
+ }
+ 
+ /* All inputs that have the attribute submit and reset have the same style of a radius of a 20px hypothetical circle, it is displayed inline which means on the block of code. */
+ 
+ input[type='submit'] {
+    background-color: rgb(144, 170, 144);
+    color: rgb(245,245,165);
+    border-radius: 20px;
+    float: none;
+    display: inline;
+    font-size: 1.1em;
+   
+ }
+ input[type='reset']{background-color: rgb(144, 170, 144);
+    color: rgb(245,245,165);
+    border-radius: 20px;
+    float: none;
+    display: inline;
+    font-size: 1.1em;
+    
+ }

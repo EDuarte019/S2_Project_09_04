@@ -4,11 +4,23 @@
 Name:Evelyn Duarte
 Date: 1/22/19 
  */
+
+ /* The image takes up the entire space of the html file, so it fits as needed. */
 header img {
     width: 100%;
 }
-
+/* The body is horizontally aligned in the middle just like the form which has a color of rgb. */
 body {
     margin-left: auto;
     margin-right: auto;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(213, 238, 237, 0.747);
+}
+/* The page has a background image that tiles. */
+html{
+    background: url(download.jpg);
+    background-repeat: repeat;
 }

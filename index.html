@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Millennium Computers </title>
     <link rel="stylesheet" href="reset.css">
-    <link href="mc_forms.css" rel="stylesheet" />
     <link href="mc_styles.css" rel="stylesheet" />
+    <link href="mc_forms.css" rel="stylesheet" />
     <script src="mc_script.js"></script>
 </head>
 <header>
@@ -21,6 +21,7 @@
 </header>
 
 <body>
+    <!-- A form was created and in the form there are labels with inputs that connect with the for and id. All fields are required.-->
     <form id="cForm" action="http://www.mill_computers.com/orders/process.cgi." method="POST">
         <fieldset>
             <div>
@@ -104,6 +105,7 @@
                 <input name="phone" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
                     required />
             </div>
+            <!-- For the select box, i simply put select and the options for the label were put into option elements with the value and text the same. -->
             <div>
                 <label for="pSpeed">Processor Speed</label>
                 <select name="pSpeed" id="pSpeed">
@@ -138,6 +140,7 @@
                     <option value="750 GB">750 GB</option>
                     <option value="1 TB">1 TB</option>
                 </select>
+                <!-- For the yes and no buttons, i simply used a fieldset that has a label and input. The type has to be radio to make it a select button.  -->
                 <div>
                     <label>DVD Burner?</label>
                     <fieldset>
@@ -165,8 +168,27 @@
                         <label for="mNo">No</label>
                         <input name="MC" id="mNo" value="No" type="radio">
 
+
                     </fieldset>
                 </div>
+                <!-- To make a checkbox, the type simply needs to be checkbox. -->
+                <div>
+                    <fieldset>
+                        <label for="checkBox">24 month extended warranty?</label>
+                        <input type="checkbox" id="checkBox" name="check">
+                    </fieldset>
+                </div>
+                <!-- To add a text area box, a text area element was inputed. -->
+                <div>
+                    <label for="Box">Request addidtional information or add comments!</label>
+                   <div>
+                    <textarea type="text" name="comment" id="Box"></textarea>
+                   </div>
+                </div>
+                <!-- To cancel the order, I put it to reset so it does not submit and the order is cancelled. The contact and send order was submitted so the information could be transferred. -->
+                <input type="Submit" value="Send order">
+                 <input type="reset" value="Cancel order"> 
+                 <input type="submit" value="contact me">
     </form>
 </body>
 
